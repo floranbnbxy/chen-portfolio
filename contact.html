@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact — CHEN YINGSI</title>
+  <meta name="description" content="联系陈颖思 — 合作邀约 / 邮箱 / 电话" />
+  <!-- 字体由 main.js 统一注入，此处不放 Google Fonts link -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-fade">
+
+  <!-- ============ 导航（公共组件，main.js 统一注入） ============ -->
+  <header class="nav" data-nav></header>
+
+  <!-- ============ 联系 ============ -->
+  <section class="section" style="border-top:none; padding-top:calc(var(--nav-h) + 80px);">
+    <div class="container">
+      <p class="section-kicker reveal">Contact · 联系我</p>
+
+      <div class="contact-grid">
+        <!-- 左：邀约文案 + 联系方式 -->
+        <div>
+          <h1 class="contact-lead reveal" style="--d:80ms">
+            Let's<br/>Create<br/>Together.
+          </h1>
+          <p class="contact-text reveal cn" style="--d:200ms">
+            广播电视编导专业2027届应届毕业生，正在寻找编导、策划、内容运营相关的校招与实习机会。
+            具备纪录片、宣传片、大型活动的全流程制作经验，可随时到岗。期待与您的团队相遇。
+          </p>
+
+          <div class="contact-list">
+            <div class="contact-item reveal" style="--d:280ms">
+              <div class="k">Email · 邮箱</div>
+              <a class="v" href="mailto:3435657748@qq.com">3435657748@qq.com</a>
+            </div>
+            <div class="contact-item reveal" style="--d:340ms">
+              <div class="k">Phone · 电话</div>
+              <a class="v" href="tel:19310224128">19310224128</a>
+            </div>
+            <div class="contact-item reveal" style="--d:400ms">
+              <div class="k">Location · 所在地</div>
+              <div class="v cn">湖南省长沙市望城区</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- 右：微信二维码 -->
+        <div class="reveal contact-qr-right" style="--d:240ms">
+          <p class="section-kicker" style="margin-bottom:28px;">WeChat · 微信</p>
+          <div class="qr-frame-large">
+            <div class="qr-img-slot" data-wechat-qr>
+              <!-- JS 注入 assets/images/wechat-qr.png；缺失时显示占位提示 -->
+            </div>
+          </div>
+          <p class="qr-tip cn" style="margin-top:20px; text-align:center;">扫码添加微信，期待与您交流</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 页脚（公共组件，main.js 统一注入） ============ -->
+  <footer class="footer" data-footer></footer>
+
+  <script src="js/work-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

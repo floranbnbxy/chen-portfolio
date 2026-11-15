@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — CHEN YINGSI</title>
+  <meta name="description" content="关于陈颖思 — 创作理念、擅长方向与个人成长时间线" />
+  <!-- 字体由 main.js 统一注入，此处不放 Google Fonts link -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-fade">
+
+  <!-- ============ 导航（公共组件，main.js 统一注入） ============ -->
+  <header class="nav" data-nav></header>
+
+  <!-- ============ 顶部（深底色） ============ -->
+  <section class="section" style="border-top:none; padding-top:calc(var(--nav-h) + 80px); padding-bottom:32px;">
+    <div class="container">
+      <p class="section-kicker reveal">About Me · 关于我</p>
+      <h1 class="section-title reveal" style="--d:80ms">About</h1>
+    </div>
+  </section>
+
+  <!-- ============ 主板块：左右分栏（左人像 / 右内容） ============ -->
+  <section class="section" style="border-top:none; padding-top:40px; padding-bottom:80px;">
+    <div class="container">
+      <div class="about-grid">
+        <!-- 左：人像（sticky） -->
+        <div class="about-portrait reveal">
+          <div class="frame">
+            <div class="img-slot" data-about-img>
+              <!-- JS 注入 assets/images/portrait.jpg -->
+            </div>
+          </div>
+        </div>
+
+        <!-- 右：理念 + 时间线 -->
+        <div class="about-text reveal" style="--d:80ms">
+          <p class="about-lead cn">
+            用镜头讲故事，用剪辑重塑节奏。
+          </p>
+          <p class="cn">
+            好的影像来自两个东西：真实的瞬间，和克制的剪裁。
+            策划时想清楚「讲给谁听」，拍摄时沉住气，剪辑时大胆做减法。
+          </p>
+          <p class="cn">
+            工具只是手段。熟悉 AIGC，把重复劳动交给机器，
+            让更多精力留给创意本身。
+          </p>
+
+          <p class="section-kicker" style="margin-top:72px; margin-bottom:28px;">Strengths · 擅长方向</p>
+          <div class="skills">
+            <span class="skill-tag">现场执行</span>
+            <span class="skill-tag">影视策划</span>
+            <span class="skill-tag">AIGC 工作流</span>
+          </div>
+
+          <p class="section-kicker" style="margin-top:72px; margin-bottom:28px;">Timeline · 成长</p>
+          <div class="timeline">
+            <div class="tl-item">
+              <div class="tl-year">2026</div>
+              <h3 class="tl-title">走进省级媒体</h3>
+              <p class="tl-desc cn">湖南国际频道实习，从发布会执行导演到宣发剪辑，第一次站在更大的现场。</p>
+            </div>
+            <div class="tl-item">
+              <div class="tl-year">2025</div>
+              <h3 class="tl-title">第一个 10 万+</h3>
+              <p class="tl-desc cn">独立剪辑作品首次突破 10 万浏览，验证了从策划到成片的全流程能力。</p>
+            </div>
+            <div class="tl-item">
+              <div class="tl-year">2024</div>
+              <h3 class="tl-title">从课堂到现场</h3>
+              <p class="tl-desc cn">第一次融媒体实习、第一次担任学生组执行导演，完成决赛直播切换协同。</p>
+            </div>
+            <div class="tl-item">
+              <div class="tl-year">2023</div>
+              <h3 class="tl-title">起点</h3>
+              <p class="tl-desc cn">考入中南林业科技大学涉外学院广播电视编导专业，加入校融媒体中心视频部。</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 跳转按钮（深底色） ============ -->
+  <section class="section" style="padding-top:72px; padding-bottom:100px;">
+    <div class="container" style="display:flex; gap:16px; flex-wrap:wrap;">
+      <a href="works.html" class="btn btn-solid reveal">View Works · 查看项目 <span class="arrow">→</span></a>
+      <a href="resume.html" class="btn reveal">Full Resume · 完整简历 <span class="arrow">→</span></a>
+    </div>
+  </section>
+
+  <!-- ============ 页脚（公共组件，main.js 统一注入） ============ -->
+  <footer class="footer" data-footer></footer>
+
+  <script src="js/work-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

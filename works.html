@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Works — CHEN YINGSI</title>
+  <meta name="description" content="陈颖思作品集 — 纪录片 / 宣传片 / 活动纪实 / 微电影" />
+  <!-- 字体由 main.js 统一注入，此处不放 Google Fonts link -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-fade">
+
+  <!-- ============ 导航（公共组件，main.js 统一注入） ============ -->
+  <header class="nav" data-nav></header>
+
+  <!-- ============ 页头 ============ -->
+  <section class="section" style="border-top:none; padding-top:calc(var(--nav-h) + 80px); padding-bottom:32px;">
+    <div class="container">
+      <p class="section-kicker reveal">All Works · 全部作品</p>
+      <h1 class="section-title reveal" style="--d:80ms">Works</h1>
+
+      <!--
+        筛选功能预留：如需启用，在此添加 .filter-bar 并在 main.js 打开 initFilter() 注释。
+        <div class="filter-bar">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="纪录片">纪录片</button>
+          <button class="filter-btn" data-filter="宣传片">宣传片</button>
+          <button class="filter-btn" data-filter="活动纪实">活动纪实</button>
+          <button class="filter-btn" data-filter="微电影">微电影</button>
+        </div>
+      -->
+    </div>
+  </section>
+
+  <!-- ============ 作品网格（数据全部来自 work-data.js） ============ -->
+  <section style="padding-bottom:120px;">
+    <div class="container">
+      <div class="works-grid" data-works-grid>
+        <!-- JS 读取 work-data.js 全部作品渲染 -->
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 作品详情弹窗 ============ -->
+  <div class="modal" aria-hidden="true">
+    <div class="modal-overlay"></div>
+    <div class="modal-card">
+      <button class="modal-close" aria-label="close">×</button>
+      <div class="modal-img" data-m-img>
+        <!-- JS 注入封面图 -->
+      </div>
+      <div class="modal-body">
+        <p class="modal-type" data-m-type></p>
+        <h2 class="modal-title" data-m-title></h2>
+        <dl class="modal-info">
+          <dt>Year</dt><dd data-m-year></dd>
+          <dt>Role</dt><dd data-m-role></dd>
+        </dl>
+        <p class="modal-desc cn" data-m-desc></p>
+        <!-- videoUrl 不为空时显示，否则 JS 隐藏 -->
+        <a class="btn btn-accent" data-m-video href="#" target="_blank" rel="noopener noreferrer">
+          View Video · 观看成片 <span class="arrow">→</span>
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ============ 页脚（公共组件，main.js 统一注入） ============ -->
+  <footer class="footer" data-footer></footer>
+
+  <script src="js/work-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

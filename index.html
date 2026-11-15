@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CHEN YINGSI — Director / Editor / Storyteller</title>
+  <meta name="description" content="陈颖思个人作品集 — 广播电视编导 / 剪辑 / 故事讲述者" />
+  <!-- 字体由 main.js 统一注入，此处不放 Google Fonts link -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="page-fade">
+
+  <!-- ============ 导航（公共组件，main.js 统一注入） ============ -->
+  <header class="nav" data-nav></header>
+
+  <!-- ============ Hero ============ -->
+  <section class="hero">
+    <div class="hero-bg-layer"></div>
+    <div class="container">
+      <div class="hero-grid">
+        <!-- 左：身份标语 + 极简介绍 -->
+        <div class="hero-left">
+          <p class="hero-kicker reveal" style="--d:0ms">Portfolio · 2026</p>
+          <h1 class="hero-name reveal" style="--d:80ms">CHEN<br />YINGSI</h1>
+          <div class="hero-roles reveal" style="--d:200ms">
+            <span>Director</span>
+            <span>Editor</span>
+            <span>Storyteller</span>
+          </div>
+          <p class="hero-bio reveal cn" style="--d:320ms">
+            广播电视编导在读，擅长影视策划、现场执行与 AIGC 工作流，让创意高效落地。
+          </p>
+          <p class="hero-meta reveal" style="--d:440ms">
+            <span class="pin">●</span>
+            <span>Based in Changsha · 长沙</span>
+          </p>
+        </div>
+
+        <!-- 右：人像白框 + 头像 -->
+        <div class="hero-visual reveal" style="--d:240ms">
+          <div class="frame">
+            <div class="img-slot" data-hero-img>
+              <!-- JS 注入 assets/images/portrait.jpg -->
+            </div>
+          </div>
+          <div class="avatar" data-avatar>
+            <!-- JS 注入头像 -->
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 精选作品（3 条，读取 work-data.js 前 3 条） ============ -->
+  <section class="section">
+    <div class="container">
+      <p class="section-kicker reveal">Selected Works · 精选作品</p>
+      <h2 class="section-title reveal" style="--d:80ms">Recent<br/>Works</h2>
+      <div style="height:56px"></div>
+      <div class="works-grid featured" data-featured>
+        <!-- JS 渲染 3 张精选卡片 -->
+      </div>
+      <div style="height:56px" class="reveal">
+        <a href="works.html" class="btn">View All Works <span class="arrow">→</span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ 页脚（公共组件，main.js 统一注入） ============ -->
+  <footer class="footer" data-footer></footer>
+
+  <script src="js/work-data.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
